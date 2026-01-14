@@ -97,6 +97,7 @@ header{
 }
 
 /* gestion reservation */
+.container_reserver,
 .container_offres{
     display: flex;
     justify-content: center;
