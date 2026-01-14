@@ -1,0 +1,169 @@
+/* page principale */
+html{
+    @media (max-width: 768px) {
+        font-size: 10px;
+}
+}
+
+body{
+    background-color: lightblue;
+    color: rgba(255, 255, 255, 0.841);
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: #007bff;
+    padding: 1rem;
+    color: white;
+    border-radius: 10px;
+}
+/* centrage barre nav */
+.barre_nav{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.barre_nav li {
+    display: inline;
+}
+
+/*design barre nav */
+.barre_nav a{
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.barre_nav a:hover {
+    background-color: gray;
+}
+
+.logo{
+    max-height: 50px;
+    max-width: 50px;
+    @media (max-width: 768px) {
+        max-height: 25px;
+        max-width: 25px;
+}
+}
+
+/*gestion images presentation */
+
+.conteneur_images{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+.images_presentation{
+    max-height: 200px;
+    width: auto;
+    border-radius: 8px;        
+    overflow: hidden;         
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    @media (max-width: 968px) {
+        max-height: 150px;
+        width: auto;
+}
+    @media (max-width: 768px) {
+        max-height: 100px;
+        width: auto;
+}
+}
+
+/*gestion reservation */
+.container_offres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+  width: 320px;            
+  border: none;     
+  border-radius: 8px;        
+  overflow: hidden;         
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;              
+  background: #007bff;
+}
+
+.card-img {
+  width: 100%;                
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 1rem;              
+}
+
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: white;
+}
+
+
+.texte{
+    text-align: center;
+}
+
+.texte_gauche{
+    padding-left: 5%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(30, 87, 186, 0.547);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* inscription */
+form {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center; 
+}
+
+button {
+    width: 20%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;               
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.container_reserver{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+}
+
+.button_form{
+    width: 60%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;               
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer; 
+}
