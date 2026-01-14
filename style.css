@@ -1,22 +1,36 @@
 /* page principale */
-html{
-    @media (max-width: 768px) {
-        font-size: 10px;
+* {
+    box-sizing: border-box;
 }
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
 }
 
 body{
     background-color: lightblue;
     color: rgba(255, 255, 255, 0.841);
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 header{
     background-color: #007bff;
     padding: 1rem;
     color: white;
-    border-radius: 10px;
 }
+
 /* centrage barre nav */
 .barre_nav{
     display: flex;
@@ -28,7 +42,7 @@ header{
     display: inline;
 }
 
-/*design barre nav */
+/* design barre nav */
 .barre_nav a{
     text-decoration: none;
     padding: 8px 12px;
@@ -44,14 +58,16 @@ header{
 .logo{
     max-height: 50px;
     max-width: 50px;
-    @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+    .logo{
         max-height: 25px;
         max-width: 25px;
-}
+    }
 }
 
-/*gestion images presentation */
-
+/* gestion images presentation */
 .conteneur_images{
     display: flex;
     gap: 20px;
@@ -59,59 +75,64 @@ header{
     align-items: center;
     padding-top: 5%;
 }
+
 .images_presentation{
     max-height: 200px;
     width: auto;
-    border-radius: 8px;        
-    overflow: hidden;         
+    border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    @media (max-width: 968px) {
-        max-height: 150px;
-        width: auto;
-}
-    @media (max-width: 768px) {
-        max-height: 100px;
-        width: auto;
-}
 }
 
-/*gestion reservation */
+@media (max-width: 968px) {
+    .images_presentation{
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .images_presentation{
+        max-height: 100px;
+    }
+}
+
+/* gestion reservation */
 .container_offres{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .card {
-  width: 320px;            
-  border: none;     
-  border-radius: 8px;        
-  overflow: hidden;         
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 1rem;              
-  background: #007bff;
+    width: 320px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    background: #007bff;
 }
 
 .card-img {
-  width: 100%;                
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .card-content {
-  padding: 1rem;              
+    padding: 1rem;
 }
 
 .card-title {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.25rem;
-  color: white;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: white;
 }
 
 .card-text {
-  font-size: 1rem;
-  color: white;
+    font-size: 1rem;
+    color: white;
 }
-
 
 .texte{
     text-align: center;
@@ -122,48 +143,40 @@ header{
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background: rgba(30, 87, 186, 0.547);
     color: white;
     text-align: center;
     padding: 15px;
+    margin-top: auto;
 }
 
 /* inscription */
 form {
-  width: 300px;
-  margin: 50px auto;
-  text-align: center; 
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
 }
 
 button {
-    width: 20%;
     padding: 10px;
     background: #007bff;
     color: white;
     border: none;
-    border-radius: 8px;               
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
-.container_reserver{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    padding: 10px;
-}
-
+/* BOUTON INSCRIPTION — CORRIGÉ */
 .button_form{
     width: 60%;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;               
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer; 
+    display: block;
+    margin: 15px auto 0 auto;
 }
